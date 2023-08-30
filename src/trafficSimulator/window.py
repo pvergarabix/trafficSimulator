@@ -16,12 +16,12 @@ class Window:
         
     def set_default_config(self):
         """Set default configuration"""
-        self.width = 1400
-        self.height = 900
+        self.width = 1200 #1400
+        self.height = 800
         self.bg_color = (250, 250, 250)
 
         self.fps = 60
-        self.zoom = 5
+        self.zoom = 3
         self.offset = (0, 0)
 
         self.mouse_last = (0, 0)
@@ -290,7 +290,7 @@ class Window:
     def draw_signals(self):
         for signal in self.sim.traffic_signals:
             for i in range(len(signal.roads)):
-                color = (0, 255, 0) if signal.current_cycle[i] else (255, 0, 0)
+                color = (0, 255, 0) if signal.current_cycle[i] else (255, 0, 0)                
                 for road in signal.roads[i]:
                     a = 0
                     position = (
