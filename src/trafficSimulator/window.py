@@ -35,6 +35,8 @@ class Window:
         self.screen = pygame.display.set_mode((self.width, self.height))
         pygame.display.flip()
 
+        pygame.display.set_caption('Grupo 10 - Diplomado IoT 2023')
+
         # Fixed fps
         clock = pygame.time.Clock()
 
